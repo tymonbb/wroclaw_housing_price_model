@@ -81,7 +81,5 @@ Gretl, Python (pandas, statsmodels), SQL, Power BI / Streamlit, Git
 
 ## Status
 
-In progress — data collection and documentation complete, Python replication
-
-next.
+In progress — data collection, SQL database, and exploratory queries complete; Python replication next.
 
