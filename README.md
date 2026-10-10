@@ -75,11 +75,28 @@ wroclaw\_housing\_price\_model/
 
 Gretl, Python (pandas, statsmodels), SQL, Power BI / Streamlit, Git
 
+## How to run
+
+git clone https://github.com/tymonbb/wroclaw_housing_price_model.git
+cd wroclaw_housing_price_model
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+
+Then open notebooks/model_replication.ipynb.
+
 ## Results
 
-[TODO — to be completed once the Python replication and dashboard are built]
-
+- Python replication reproduces the Gretl model: n = 67, R² = 0.821,
+  adjusted R² = 0.713; all 25 coefficients keep their sign and
+  significance.
+- Residual diagnostics passed (Breusch-Pagan p = 0.59, Breusch-Godfrey
+  p = 0.15 / 0.14, Shapiro-Wilk p = 0.36); OLS-CUSUM shows stable
+  parameters.
+- Dynamic forecast: +5.8% in 2026 Q1 (~14,900 PLN/m²) and +1.0% in
+  2026 Q2 (~15,050 PLN/m²).
+  
 ## Status
 
-In progress — data collection, SQL database, and exploratory queries complete; Python replication next.
+In progress — data, SQL database and Python replication complete; dashboard next.
 

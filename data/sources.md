@@ -40,3 +40,11 @@ Source: NBP data sources
 Notes: 	manually collected from NBP website,
 	aggregated to quartety values,
 	changed the data format to percentage values
+
+Data notes from the Python replication:
+- 9 of 72 quarterly unemployment values computed from the transcribed
+  GUS table differ from those used in the original Gretl model
+  (2008 Q1–Q3, 2009 Q1–Q4, 2013 Q3, 2021 Q4; max difference 0.2 pp),
+  most likely due to manual transcription at the time.
+- GDP growth for 2026 Q1 (3.5%), required for the 2026 Q2 forecast,
+  is not in raw/nbp_gdp.xlsx; source: manually collected from NBP website.
