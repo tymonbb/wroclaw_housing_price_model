@@ -44,7 +44,7 @@ x20; academic software
 
 - SQL used for exploratory aggregation and data quality checks
 
-- Interactive dashboard (Power BI / Streamlit) visualizing historical vs.
+- Interactive Power BI dashboard visualizing historical vs.
 
 x20; forecasted prices
 
@@ -73,7 +73,7 @@ wroclaw\_housing\_price\_model/
 
 ## Tools
 
-Gretl, Python (pandas, statsmodels), SQL, Power BI / Streamlit, Git
+Gretl, Python (pandas, statsmodels), SQL, Power BI (Dax), Git
 
 ## How to run
 
@@ -84,6 +84,21 @@ venv\Scripts\activate
 pip install -r requirements.txt
 
 Then open notebooks/model_replication.ipynb.
+
+## Dashboard
+
+Power BI report built on the processed data and forecast exported from the
+notebook. DAX measures drive the KPI cards; the forecast is shown with its
+95% interval.
+
+![Price forecast](dashboard/screenshots/price_forecast.png)
+
+![Macro drivers](dashboard/screenshots/macro_drivers.png)
+
+Files: `dashboard/wroclaw_housing_dashboard.pbix` (Power BI Desktop) and
+`dashboard/wroclaw_housing_dashboard.pdf`.
+To refresh the report after cloning, update the CSV paths in Power BI:
+Transform data → Data source settings.
 
 ## Results
 
@@ -98,5 +113,5 @@ Then open notebooks/model_replication.ipynb.
   
 ## Status
 
-In progress — data, SQL database and Python replication complete; dashboard next.
+Complete — data pipeline, SQL, Python replication and Power BI dashboard.
 
